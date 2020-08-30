@@ -12,3 +12,5 @@ RUN set -eux && \
   composer config -g repos.packagist composer https://packagist.jp && \
   composer global require hirak/prestissimo && \
   composer global require laravel/helpers
+  CMD ["php", "artisan", "serve", "--host", "0.0.0.0"]
+  
